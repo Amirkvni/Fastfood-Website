@@ -1,8 +1,67 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1401px) {
+  .navbar-collapse {
+    min-width: 90rem;
+  }
 }
 @media screen and (max-width: 1200px) {
+  .navbar-wrapper {
+    justify-content: space-around;
+  }
+  .navbar-collapse {
+    min-width: 82rem;
+  }
+  .nav__link {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 992px) {
+  .navbar-collapse {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    right: 0;
+    left: 0;
+    height: 0px;
+    flex-direction: column;
+    width: 100%;
+    background: transparent;
+    min-width: auto;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+  }
+  .navbar-collapse--open {
+    height: 40rem; /*add with js*/
+    position: absolute;
+    z-index: 2000;
+  }
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: orange;
+    font-size: 16px;
+    transition: all linear 0.3s;
+    border-radius: 10px;
+  }
+  .navbar-wrapper {
+    justify-content: space-between;
+    position: relative;
+  }
+  .navbar-links {
+    flex-direction: column;
+  }
+  .nav__item {
+    margin-top: 2rem;
+  }
+  .navbar-btn {
+    margin-top: 2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
