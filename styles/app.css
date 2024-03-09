@@ -60,6 +60,7 @@ body {
   margin-top: 0.3rem;
   /* opacity: 0; */
   overflow: hidden;
+  transition: all 0.7s ease-in-out;
   z-index: 100;
 }
 .menu__list li {
@@ -107,10 +108,11 @@ body {
 }
 /* navbar : */
 .navbar {
-  background-color: #f4ecdf;
-  margin-top: 3rem;
+  background-color: rgb(244, 236, 223);
+  margin-top: 1rem;
   position: sticky;
-  top: 0;
+  padding: 2rem 0;
+  top: 0px;
 }
 .navbar-wrapper {
   display: flex;
@@ -148,16 +150,40 @@ body {
 .nav__item {
   margin-left: 2rem;
   font-weight: bold;
+  position: relative;
 }
 .navbar-btn {
   background-color: var(--red-color);
-  padding: 14px 20px 11px 20px;
+  padding: 1.4rem 2rem 1.1rem 2rem;
   position: relative;
-  border-radius: 30px;
+  border-radius: 3rem;
   z-index: 1;
   cursor: pointer;
   text-align: center;
 }
 .color-white {
   color: #ffff;
+}
+.sub_menu {
+  position: absolute;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  min-width: 12rem;
+  padding: 0.5rem 1rem;
+  top: 3.2rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease-in-out;
+}
+.nav__item:hover > .sub_menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+.sub_menu-link {
+  color: var(--text-color);
+}
+.sub_menu-item {
+  margin-top: 1rem;
 }
