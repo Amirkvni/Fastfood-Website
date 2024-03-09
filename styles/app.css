@@ -1,0 +1,27 @@
+@import "normalize.css";
+@import "grid.css";
+@import "fonts.css";
+:root {
+  --red-color: #ab162c;
+  --text-color: #080521;
+  --white-color: #ffffff;
+  --orange-color: #f2a22a;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "IraninaSans";
+  line-height: 1.5;
+  color: var(--text-color);
+  padding-top: 12rem;
+}
