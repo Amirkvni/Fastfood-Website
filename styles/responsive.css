@@ -13,6 +13,13 @@
   .nav__link {
     font-size: 1.5rem;
   }
+  .banner__title {
+    font-size: 4.2rem;
+  }
+  .banner__img {
+    width: 487px;
+    height: 516px;
+  }
 }
 @media screen and (max-width: 992px) {
   .navbar-collapse {
@@ -66,6 +73,16 @@
     background-color: #ab162c;
     z-index: 100;
   }
+  .banner {
+    padding-top: 4rem;
+  }
+  .banner__link {
+    margin-top: 4rem;
+  }
+  .banner__img {
+    width: 630px;
+    height: 516px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -83,9 +100,17 @@
   .navbar {
     margin-top: 3rem;
   }
+  .banner__img {
+    width: 450px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .banner__img {
+    width: auto;
+    height: auto;
+  }
 }
 @media screen and (max-width: 394px) {
   /* .menu li:last-of-type {
