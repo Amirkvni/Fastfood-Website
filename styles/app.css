@@ -116,6 +116,7 @@ body {
   position: sticky;
   padding: 2rem 0;
   top: 0px;
+  z-index: 2;
 }
 .navbar-wrapper {
   display: flex;
@@ -138,9 +139,7 @@ body {
 .nav__link:hover {
   color: var(--red-color);
 }
-.navbar-btn {
-  display: flex;
-}
+
 .navbar-collapse {
   display: flex;
   min-width: 104rem;
@@ -163,6 +162,7 @@ body {
   z-index: 1;
   cursor: pointer;
   text-align: center;
+  display: flex;
 }
 .color-white {
   color: #ffff;
@@ -206,7 +206,7 @@ body {
   font-size: 1.6rem;
 }
 .banner__link {
-  background-color: var(--red-color);
+  background-color: var(--orange-color);
   padding: 0.9rem 2.2rem;
   position: relative;
   border-radius: 3rem;
@@ -244,30 +244,10 @@ body {
 .banner__photo {
   width: 100%;
 }
-/* Popularfoods : */
+/* Popular foods : */
 .Popularfoods {
   background-color: #f4ecdf;
-}
-.Popularfoods__title {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: bold;
-  padding: 9rem 0;
-}
-.slide-content {
-  margin: 0 4rem;
-}
-.slide-wrapper {
-}
-.card {
-  border-radius: 2.5rem;
-  background-color: aqua;
-}
-.card-contact {
-  padding: 10px 14px;
-}
-.image-content {
+  padding-top: 7rem;
 }
 .card-image {
   position: relative;
@@ -305,10 +285,17 @@ body {
   padding: 0.9rem 2.2rem;
   position: relative;
   border-radius: 3rem;
-  z-index: 1;
   cursor: pointer;
   text-align: center;
   color: var(--white-color);
   display: inline-block;
   margin-top: 1rem;
+}
+.section-head {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.section-head__title {
+  font-size: 4.8rem;
+  margin: 0;
 }

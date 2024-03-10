@@ -23,6 +23,9 @@
   .Popularfoods__title {
     font-size: 2rem;
   }
+  .section-head__title {
+    font-size: 4rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .navbar-collapse {
@@ -36,15 +39,16 @@
     height: 0px;
     flex-direction: column;
     width: 100%;
-    background: transparent;
+    background-color: transparent;
     min-width: auto;
     overflow: hidden;
-    transition: all 500ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
   .navbar-collapse--open {
     height: 40rem; /*add with js*/
     position: absolute;
-    z-index: 2000;
+    background-color: #f2a22a;
+    border-radius: 1rem;
   }
   .nav-icon {
     width: 40px;
