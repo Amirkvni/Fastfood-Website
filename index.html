@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
     <title>fastfood website</title>
   </head>
   <body>
@@ -135,7 +136,131 @@
               </div>
             </div>
         </section>
+        <section class="Popularfoods">
+          <div class="container">
+            <div class="row">
+              <div class="Popularfoods__title col-8">
+                <h2>
+                غذای محبوب ما
+                </h2>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="swiper">
+                <div class="swiper-wrapper">        
+                  <div class="swiper-slide">
+                    <span class="slide__title">جدید</span>
+                   <div class="wrapper">
+                    <div>
+                      <img
+                      src="images/popular_food_img_2.png"
+                      class="portfolio-content__image"
+                    />
+                    </div>
+                    <h3>پیتزا مکزیکی</h3>
+                    <a href="" class="slide__link">منو را ببینید</a>
+                   </div>
+                  </div>         
+                  <div class="swiper-slide">
+                    <span class="slide__title">جدید</span>
+                   <div class="wrapper">
+                    <div>
+                      <img
+                      src="images/popular_food_img_1.png"
+                      class="portfolio-content__image"
+                    />
+                    </div>
+                    <h3>پیتزا مکزیکی</h3>
+                    <a href="" class="slide__link">منو را ببینید</a>
+                   </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="slide__title">جدید</span>
+                   <div class="wrapper">
+                    <div>
+                      <img
+                      src="images/popular_food_img_4.png"
+                      class="portfolio-content__image"
+                    />
+                    </div>
+                    <h3>پیتزا مکزیکی</h3>
+                    <a href="" class="slide__link">منو را ببینید</a>
+                   </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="slide__title">جدید</span>
+                   <div class="wrapper">
+                    <div>
+                      <img
+                      src="images/popular_food_img_2.png"
+                      class="portfolio-content__image"
+                    />
+                    </div>
+                    <h3>پیتزا مکزیکی</h3>
+                    <a href="" class="slide__link">منو را ببینید</a>
+                   </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="slide__title">جدید</span>
+                   <div class="wrapper">
+                    <div>
+                      <img
+                      src="images/popular_food_img_3.png"
+                      class="portfolio-content__image"
+                    />
+                    </div>
+                    <h3>پیتزا مکزیکی</h3>
+                    <a href="" class="slide__link">منو را ببینید</a>
+                   </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="slide__title">جدید</span>
+                   <div class="wrapper">
+                    <div>
+                      <img
+                      src="images/popular_food_img_5.png"
+                      class="portfolio-content__image"
+                    />
+                    </div>
+                    <h3>پیتزا مکزیکی</h3>
+                    <a href="" class="slide__link">منو را ببینید</a>
+                   </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+           </div>
+          </div>
+        </section>
     </section>
+  
     <script src="scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/Javascript">
+      const swiperOption={
+        pagination:{
+        el:'.swiper-pagination'
+        },spaceBetween:30,
+            breakpoints: {
+        320:{
+          slidesPerView: 1,
+        },
+        575:{
+          slidesPerView: 2,
+         },
+         991:{
+          slidesPerView: 3,
+         },
+         1200:{
+          slidesPerView: 4,
+        }
+      }
+          }
+         const swiper1 = new Swiper(".swiper",swiperOption);
+   
+    </script>
+   
   </body>
 </html>

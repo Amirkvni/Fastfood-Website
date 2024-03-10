@@ -244,4 +244,71 @@ body {
 .banner__photo {
   width: 100%;
 }
-/*  */
+/* Popularfoods : */
+.Popularfoods {
+  background-color: #f4ecdf;
+}
+.Popularfoods__title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 9rem 0;
+}
+.slide-content {
+  margin: 0 4rem;
+}
+.slide-wrapper {
+}
+.card {
+  border-radius: 2.5rem;
+  background-color: aqua;
+}
+.card-contact {
+  padding: 10px 14px;
+}
+.image-content {
+}
+.card-image {
+  position: relative;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid red;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.slide__title {
+  background-color: #ab162c;
+  padding: 0.4rem 2.4rem;
+  color: var(--white-color);
+}
+.swiper-slide {
+  background-color: var(--white-color);
+  border-radius: 2rem;
+}
+.slide__link {
+  background-color: var(--red-color);
+  padding: 0.9rem 2.2rem;
+  position: relative;
+  border-radius: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  text-align: center;
+  color: var(--white-color);
+  display: inline-block;
+  margin-top: 1rem;
+}
