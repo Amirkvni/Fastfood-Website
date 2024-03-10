@@ -2,6 +2,11 @@
   .navbar-collapse {
     min-width: 90rem;
   }
+  .up a::before {
+    content: "";
+    position: absolute;
+    width: 20rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   .navbar-wrapper {
@@ -25,6 +30,13 @@
   }
   .section-head__title {
     font-size: 4rem;
+  }
+  .up a {
+    font-size: 14px;
+  }
+  .up a::before {
+    width: 17rem;
+    right: 9rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -90,6 +102,13 @@
     width: 630px;
     height: 516px;
   }
+  .up a {
+    font-size: 2rem;
+  }
+  .up a::before {
+    width: 26rem;
+    right: 16rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -114,12 +133,36 @@
   .Popularfoods__title {
     font-size: 1.7rem;
   }
+  .item-food {
+    width: 44rem;
+  }
+  .up a {
+    font-size: 16px;
+  }
+  .up a::before {
+    width: 13rem;
+    right: 12rem;
+  }
 }
-
 @media screen and (max-width: 576px) {
   .banner__img {
     width: auto;
     height: auto;
+  }
+  .delicious-items {
+    border: none;
+  }
+  .delicious-item {
+    margin-top: 2.5rem;
+  }
+  .item-food {
+    width: 34rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .up a::before {
+    width: 6rem;
+    right: 11rem;
   }
 }
 @media screen and (max-width: 394px) {
@@ -128,5 +171,11 @@
   } */
   .menu__item {
     padding-left: 0;
+  }
+  .item-food {
+    width: 31rem;
+  }
+  .up a::before {
+    width: 4rem;
   }
 }

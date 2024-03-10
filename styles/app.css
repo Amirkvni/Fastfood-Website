@@ -299,3 +299,73 @@ body {
   font-size: 4.8rem;
   margin: 0;
 }
+/* Delicious menu : */
+.delicious-menu {
+  background-color: #f4ecdf;
+  padding-top: 7rem;
+}
+.delicious-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid #c0b7a9;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #c0b7a9;
+}
+
+.delicious-item {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delicious-item--active {
+  color: var(--red-color);
+}
+.items-foods {
+  margin-top: 3rem;
+}
+.item-food {
+  background-color: rebeccapurple;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+}
+.item-food__img {
+  width: 20%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-food__info {
+  width: 80%;
+  background-color: yellow;
+  position: relative;
+  padding: 11px 14px;
+}
+.up {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  min-width: 200px;
+  width: 100%;
+}
+.up a {
+  font-size: 20px;
+  font-weight: 600;
+}
+.up a::before {
+  content: "";
+  position: absolute;
+  width: 29rem;
+  top: 1.4rem;
+  height: 0.1rem;
+  background-color: red;
+  right: 13rem;
+}
+.down p {
+  padding-top: 1.4rem;
+}
