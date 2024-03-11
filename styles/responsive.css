@@ -123,6 +123,11 @@
   .app-download {
     padding: 0;
   }
+  .packages {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -189,6 +194,18 @@
   }
   .app-download {
     padding: 2rem 1rem;
+  }
+  .package-one__title {
+    font-size: 2rem;
+  }
+  .package-two__title {
+    font-size: 2rem;
+  }
+  .package-three__title {
+    font-size: 2rem;
+  }
+  .package-four__title {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 394px) {
