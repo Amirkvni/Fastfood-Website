@@ -399,7 +399,7 @@ body {
   padding: 1.5rem 2.2rem;
   border-radius: 3rem;
   cursor: pointer;
-  width: 23rem;
+  width: 24rem;
 }
 .see-menus a {
   color: var(--white-color);
@@ -471,6 +471,7 @@ body {
 .special-discounts {
   background-color: #f4ecdf;
   padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .packages {
   width: 100%;
@@ -580,4 +581,34 @@ body {
 .package-four__title {
   font-size: 2.4rem;
   font-weight: bold;
+}
+/* Chefs : */
+.Chefs {
+  background-color: #ecd8b8;
+  padding-top: 3rem;
+}
+.chef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 38rem;
+  background-color: white;
+  width: 100%;
+}
+.chef__img {
+  background-color: #ecd8b8;
+  width: 100%;
+}
+.chef__img img {
+  width: 100%;
+}
+.chef__info {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
 }
