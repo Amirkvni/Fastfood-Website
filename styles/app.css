@@ -586,6 +586,7 @@ body {
 .Chefs {
   background-color: #ecd8b8;
   padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 .chef {
   display: flex;
@@ -611,4 +612,52 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 6rem;
+}
+/* Readings ; */
+.Readings {
+  background-color: #f4ecdf;
+  padding-top: 7rem;
+}
+.blog {
+  height: 48rem;
+}
+.blog-img,
+.blog-title {
+  width: 100%;
+  height: 50%;
+}
+.blog-description {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+}
+.blog-description a {
+  background-color: var(--red-color);
+  border-radius: 1rem;
+  padding: 0 1rem;
+  color: var(--white-color);
+}
+.blog-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-img-1 {
+  background-image: url(../images/blog_2_img_1.jpg);
+}
+.blog-img-2 {
+  background-image: url(../images/blog_2_img_2.jpg);
+}
+.blog-img-3 {
+  background-image: url(../images/blog_2_img_3.jpg);
+}
+.blog-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: var(--white-color);
+}
+.blog-link a {
+  color: var(--red-color);
 }

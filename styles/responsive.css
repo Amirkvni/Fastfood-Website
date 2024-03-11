@@ -12,6 +12,9 @@
     position: absolute;
     width: 20rem;
   }
+  .blog-description {
+    width: 65%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .navbar-wrapper {
@@ -162,6 +165,9 @@
     width: 13rem;
     right: 12rem;
   }
+  .blog-description {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 576px) {
   .banner__img {
@@ -207,6 +213,9 @@
   .package-four__title {
     font-size: 2rem;
   }
+  .blog-description {
+    width: 55%;
+  }
 }
 @media screen and (max-width: 394px) {
   /* .menu li:last-of-type {
@@ -249,5 +258,8 @@
   .app-info__link2 {
     font-size: 1.5rem;
     padding: 0.7rem 1rem;
+  }
+  .blog-description {
+    width: 70%;
   }
 }
