@@ -321,6 +321,7 @@ body {
 .delicious-menu {
   background-color: #f4ecdf;
   padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .delicious-items {
   display: flex;
@@ -402,4 +403,67 @@ body {
 }
 .see-menus a {
   color: var(--white-color);
+}
+/* app-download : */
+.app-download {
+  background-image: url(../images/download_bg_2.jpg);
+  background-size: cover;
+  padding: 7rem 19rem;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.banner__info-2 {
+  color: var(--text-color);
+  font-style: normal;
+  background: var(--orange-color);
+  padding: 7px 10px 7px 50px;
+  clip-path: polygon(0 100%, 20% 50%, 0 0, 100% 0%, 100% 50%, 100% 100%);
+  margin-bottom: 15px;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+.app-info__title {
+  font-size: 4rem;
+  animation: app-info-title__animation 10s infinite;
+  font-weight: bold;
+}
+
+@keyframes app-info-title__animation {
+  0% {
+    color: #08d0ff;
+  }
+  25% {
+    color: #07f5fb;
+  }
+  50% {
+    color: #76ffa8;
+  }
+  75% {
+    color: #fffb9f;
+  }
+  100% {
+    color: #fffbe1;
+  }
+}
+.app-info__link1 {
+  background-color: var(--red-color);
+  padding: 0.9rem 2.2rem;
+  position: relative;
+  border-radius: 3rem;
+  cursor: pointer;
+  text-align: center;
+  color: var(--white-color);
+  display: inline-block;
+  margin: 1rem 0;
+}
+.app-info__link2 {
+  background-color: var(--white-color);
+  padding: 0.9rem 2.2rem;
+  position: relative;
+  border-radius: 3rem;
+  cursor: pointer;
+  text-align: center;
+  color: var(--text-color);
+  display: inline-block;
+  margin: 1rem 0;
 }

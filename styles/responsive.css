@@ -1,3 +1,8 @@
+@media screen and (min-width: 1401px) {
+  .app-info__title {
+    font-size: 3.6rem;
+  }
+}
 @media screen and (max-width: 1401px) {
   .navbar-collapse {
     min-width: 90rem;
@@ -37,6 +42,9 @@
   .up a::before {
     width: 17rem;
     right: 9rem;
+  }
+  .app-info__title {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -112,6 +120,9 @@
   .mt-3rem {
     margin-top: -3rem;
   }
+  .app-download {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -176,6 +187,9 @@
     border-radius: 3rem;
     width: 21rem;
   }
+  .app-download {
+    padding: 2rem 1rem;
+  }
 }
 @media screen and (max-width: 394px) {
   /* .menu li:last-of-type {
@@ -198,5 +212,25 @@
   .down p {
     font-size: 12px;
     font-weight: bold;
+  }
+
+  .app-download {
+    background-image: url(../images/download_bg_2.jpg);
+    background-size: cover;
+    padding: 0;
+    background-repeat: no-repeat;
+  }
+  .banner__info-2 {
+    padding: 5px 3px 5px 30px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  .app-info__title {
+    font-size: 1.5rem;
+  }
+  .app-info__link1,
+  .app-info__link2 {
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem;
   }
 }
