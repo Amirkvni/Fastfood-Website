@@ -289,7 +289,7 @@ body {
   text-align: center;
   color: var(--white-color);
   display: inline-block;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 .section-head {
   text-align: center;
@@ -298,6 +298,21 @@ body {
 .section-head__title {
   font-size: 4.8rem;
   margin: 0;
+}
+.swiper-pagination {
+  position: static !important; /*default8*/
+  margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 1.8rem !important;
+  height: 1.8rem !important;
+  border: 0.3rem solid var(--red-color) !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  border-color: black !important;
 }
 /* Delicious menu : */
 .delicious-menu {
@@ -326,7 +341,7 @@ body {
   margin-top: 3rem;
 }
 .item-food {
-  background-color: rebeccapurple;
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -334,14 +349,19 @@ body {
 }
 .item-food__img {
   width: 20%;
-  background-color: aqua;
+  /* background-color: transparent;
+   */
+  background-color: #f4ecdf;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.item-food__img img {
+  border-radius: 50%;
+}
 .item-food__info {
   width: 80%;
-  background-color: yellow;
+  /* background-color: yellow; */
   position: relative;
   padding: 11px 14px;
 }
@@ -363,8 +383,8 @@ body {
   width: 29rem;
   top: 1.4rem;
   height: 0.1rem;
-  background-color: red;
-  right: 13rem;
+  background-color: #c0b7a9;
+  right: 14rem;
 }
 .down p {
   padding-top: 1.4rem;

@@ -164,6 +164,10 @@
     width: 6rem;
     right: 11rem;
   }
+  .item-food__img img {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 @media screen and (max-width: 394px) {
   /* .menu li:last-of-type {
@@ -175,7 +179,16 @@
   .item-food {
     width: 31rem;
   }
+  .up a,
+  .up p {
+    font-size: 13px;
+  }
   .up a::before {
-    width: 4rem;
+    width: 5rem;
+    top: 1rem;
+  }
+  .down p {
+    font-size: 12px;
+    font-weight: bold;
   }
 }
