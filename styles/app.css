@@ -27,6 +27,9 @@ body {
 .align-center {
   align-items: center;
 }
+.m-auto {
+  margin: 0 auto;
+}
 /* header : */
 .header {
   background-color: var(--white-color);
@@ -376,6 +379,7 @@ body {
 .up a {
   font-size: 20px;
   font-weight: 600;
+  color: var(--text-color);
 }
 .up a::before {
   content: "";
@@ -388,4 +392,14 @@ body {
 }
 .down p {
   padding-top: 1.4rem;
+}
+.see-menus {
+  background-color: var(--red-color);
+  padding: 1.5rem 2.2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  width: 23rem;
+}
+.see-menus a {
+  color: var(--white-color);
 }

@@ -109,6 +109,9 @@
     width: 26rem;
     right: 16rem;
   }
+  .mt-3rem {
+    margin-top: -3rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -167,6 +170,11 @@
   .item-food__img img {
     width: 8rem;
     height: 8rem;
+  }
+  .see-menus {
+    padding: 1.1rem 2.1rem;
+    border-radius: 3rem;
+    width: 21rem;
   }
 }
 @media screen and (max-width: 394px) {
