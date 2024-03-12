@@ -15,6 +15,9 @@
   .blog-description {
     width: 65%;
   }
+  .contact-us {
+    width: 111rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   .navbar-wrapper {
@@ -48,6 +51,9 @@
   }
   .app-info__title {
     font-size: 2rem;
+  }
+  .contact-us {
+    width: 99rem;
   }
 }
 @media screen and (max-width: 992px) {
@@ -131,6 +137,18 @@
     gap: 2rem;
     flex-direction: column;
   }
+  .contact-us {
+    width: 68rem;
+  }
+  .contact-us__item {
+    padding: 4rem 2rem;
+  }
+  .footer-links-wrapper {
+    height: 100vh;
+  }
+  .contactus__detail {
+    padding-right: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -167,6 +185,25 @@
   }
   .blog-description {
     width: 45%;
+  }
+  .col-link {
+    align-items: center;
+  }
+  .footer-links {
+    top: 33rem;
+  }
+  .contact-us__wrapper {
+    flex-direction: column;
+  }
+  .contact-us {
+    width: 55rem;
+    top: -17rem;
+  }
+  .contact-us__item {
+    width: 100%;
+  }
+  .contact-us__item:not(.contact-us__item3):after {
+    width: 0;
   }
 }
 @media screen and (max-width: 576px) {
@@ -216,6 +253,13 @@
   .blog-description {
     width: 55%;
   }
+  .contact-us {
+    width: 37rem;
+    top: -15rem;
+  }
+  .footer-links {
+    top: 27rem;
+  }
 }
 @media screen and (max-width: 394px) {
   /* .menu li:last-of-type {
@@ -261,5 +305,8 @@
   }
   .blog-description {
     width: 70%;
+  }
+  .footer-links-wrapper {
+    height: 170vh;
   }
 }

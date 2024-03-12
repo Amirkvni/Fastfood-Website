@@ -617,6 +617,7 @@ body {
 .Readings {
   background-color: #f4ecdf;
   padding-top: 7rem;
+  padding-bottom: 18rem;
 }
 .blog {
   height: 48rem;
@@ -660,4 +661,125 @@ body {
 }
 .blog-link a {
   color: var(--red-color);
+}
+/* footer: */
+footer {
+  position: relative;
+}
+.contact-us {
+  right: 0;
+  position: absolute;
+  left: 0;
+  top: -8rem;
+  width: 136rem;
+  z-index: 1;
+  margin: 0 auto;
+}
+.contact-us__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2rem;
+  background-color: var(--white-color);
+}
+.contact-us__item {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  padding: 6rem;
+  position: relative;
+}
+.contact-us__item:not(.contact-us__item3):after {
+  position: absolute;
+  content: "";
+  width: 0.1rem;
+  height: 4rem;
+  background-color: var(--text-color);
+  left: 0px;
+}
+.contact-us__img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.contact-us__image {
+  width: 100%;
+}
+.contactus__detail {
+  padding-right: 2rem;
+}
+.contactus__detail h6 {
+  font-size: 14px;
+}
+.contactus__detail p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer-links {
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  right: 0;
+}
+.footer-links-wrapper {
+  background-image: url(../images/footer_2_bg.jpg);
+  height: 50rem;
+  position: absolute;
+  width: 100%;
+}
+.footer-link__one {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link__two {
+  display: flex;
+  flex-direction: column;
+}
+.footer-link__three {
+  flex-direction: column;
+  display: flex;
+}
+.footer-link__four {
+  flex-direction: column;
+  display: flex;
+}
+.footer-link__icon {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.col-link {
+  height: 27rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.col-link a {
+  color: var(--text-color);
+}
+.col-link h5 {
+  font-size: 25px;
+}
+.last-post div {
+  display: flex;
+  padding: 4px;
+}
+.last-post img {
+  border-radius: 2rem;
+}
+.lefting {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footer-link__icon i {
+  font-size: 20px;
+}
+.footer-links li {
+  margin-bottom: 1rem;
+  transition: all 250ms ease-in;
+}
+.footer-links li :hover {
+  color: red;
 }
