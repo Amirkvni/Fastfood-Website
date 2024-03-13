@@ -385,11 +385,11 @@ body {
 .up a::before {
   content: "";
   position: absolute;
-  width: 29rem;
+  width: 23rem;
   top: 1.4rem;
   height: 0.1rem;
   background-color: #c0b7a9;
-  right: 14rem;
+  right: 15rem;
 }
 .down p {
   padding-top: 1.4rem;

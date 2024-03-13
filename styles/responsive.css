@@ -4,13 +4,18 @@
   }
 }
 @media screen and (max-width: 1401px) {
+  .banner__img {
+    width: 550px;
+    height: 570px;
+  }
   .navbar-collapse {
     min-width: 90rem;
   }
   .up a::before {
     content: "";
     position: absolute;
-    width: 20rem;
+    width: 16rem;
+    right: 16rem;
   }
   .blog-description {
     width: 65%;
@@ -46,8 +51,8 @@
     font-size: 14px;
   }
   .up a::before {
-    width: 17rem;
-    right: 9rem;
+    width: 13rem;
+    right: 11rem;
   }
   .app-info__title {
     font-size: 2rem;
@@ -295,6 +300,11 @@
   .see-menus {
     width: 24rem;
   }
+  .up a::before {
+    width: 4rem;
+    top: 1.2rem;
+    right: 12rem;
+  }
 }
 @media screen and (max-width: 394px) {
   /* .menu li:last-of-type {
@@ -313,6 +323,7 @@
   .up a::before {
     width: 5rem;
     top: 1rem;
+    right: 10rem;
   }
   .down p {
     font-size: 12px;
@@ -355,5 +366,13 @@
   .chef__info {
     justify-content: space-around;
     padding-bottom: 3rem;
+  }
+
+  .footer-links-wrapper {
+    height: 185vh;
+  }
+
+  .footer-links {
+    top: 28rem;
   }
 }
