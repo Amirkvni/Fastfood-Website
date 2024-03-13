@@ -182,12 +182,12 @@ body {
   pointer-events: none;
   transition: opacity 0.15s ease-in-out;
 }
-.nav__item:hover > .sub_menu {
+.sub_menu--active {
   opacity: 1;
   visibility: visible;
   pointer-events: visible;
 }
-.sub_menu-link {
+ .sub_menu-link {
   color: var(--text-color);
 }
 .sub_menu-item {
