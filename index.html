@@ -10,6 +10,8 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>fastfood website</title>
   </head>
   <body>
@@ -284,7 +286,7 @@
             <div class="items-foods">
               <div class="container">
               <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" data-aos="fade-down-left">
                 <div class="item-food">
                   <div class="item-food__img"><img src="images/menu_2_img_1.jpg"></div>
                   <div class="item-food__info">
@@ -342,7 +344,7 @@
                 </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 mt-3rem">
+              <div class="col-12 col-lg-6 mt-3rem"data-aos="fade-down-right">
                 <div class="item-food">
                   <div class="item-food__img"><img src="images/menu_2_img_5.jpg"></div>
                   <div class="item-food__info">
@@ -433,7 +435,7 @@
           </div>
         </div>
         </section>
-        <section class="special-discounts">
+        <section class="special-discounts" >
           <div class="container">
             <div class="packages">
               <div class="pachakes__one">
@@ -486,7 +488,7 @@
             <div class="section-head">
               <h3 class="section-head__title">با سرآشپزهای خاص ما آشنا شوید<h3>
             </div>
-            <div class="row">
+            <div class="row" data-aos="zoom-in">
               
               <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <div class="chef">
@@ -545,7 +547,7 @@
               <h3 class="section-head__title">خواندنی ها<h3>
             </div>
             <div class="row">
-              <div class="col-12 col-md-6  col-xl-4">
+              <div class="col-12 col-md-6  col-xl-4" data-aos="fade-left">
                 <div class="blog">
                   <div class="blog-img blog-img-1">
                     <img src="" alt="">
@@ -570,7 +572,7 @@
                 </div>
                 
               </div>
-              <div class="col-12 col-md-6  col-xl-4">
+              <div class="col-12 col-md-6  col-xl-4"data-aos="fade-down">
                 <div class="blog">
                   <div class="blog-img blog-img-2">
                     <img src="" alt="">
@@ -595,7 +597,7 @@
                 </div>
                 
               </div>
-               <div class="col-12 col-md-6  col-xl-4">
+               <div class="col-12 col-md-6  col-xl-4" data-aos="fade-right">
                 <div class="blog">
                   <div class="blog-img blog-img-3">
                     <img src="" alt="">
@@ -754,6 +756,9 @@
          const swiper1 = new Swiper(".swiper",swiperOption);
    
     </script>
-   
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
   </body>
 </html>
