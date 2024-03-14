@@ -6,6 +6,26 @@
   --text-color: #080521;
   --white-color: #ffffff;
   --orange-color: #f2a22a;
+  --pink-color: #f4ecdf;
+  --main-bg-img: url(../images/banner_bg_2.jpg);
+  --appdownload-pink: url(../images/download_bg_2.jpg);
+  --footer-link-bg-pink: url(../images/footer_2.jpg);
+  --chefbg: #ecd8b8;
+  --contact-bg: var(--white-color);
+}
+:root.dark-theme {
+  --pink-color: black;
+  --text-color: #fff;
+  --white-color: black;
+  --main-bg-img: none;
+  --footer-link-bg-pink: url(../images/footer_2_bgdark.jpg);
+  --appdownload-pink: url(../images/download_bg_2dark.jpg);
+  --contact-bg: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  );
+  --chefbg: black;
 }
 a {
   text-decoration: none;
@@ -19,6 +39,7 @@ html {
   font-size: 10px;
 }
 body {
+  background-color: var(--pink-color);
   font-size: 1.6rem;
   font-family: "IraninaSans";
   line-height: 1.5;
@@ -32,7 +53,7 @@ body {
 }
 /* header : */
 .header {
-  background-color: var(--white-color);
+  background-color: transparent;
   padding-top: 1rem;
   height: 4rem;
 }
@@ -108,6 +129,7 @@ body {
 }
 .menu__list--show {
   display: block;
+  color: black;
 }
 .myAccount {
   padding-left: 1rem;
@@ -128,6 +150,8 @@ body {
 }
 .navbar-brand {
   width: 7.5rem;
+  background-color: wheat;
+  border-radius: 1rem;
 }
 .navbar__image {
   width: 100%;
@@ -172,7 +196,7 @@ body {
 }
 .sub_menu {
   position: absolute;
-  background-color: var(--white-color);
+  background-color: white;
   border-radius: 1rem;
   min-width: 12rem;
   padding: 0.5rem 1rem;
@@ -187,8 +211,8 @@ body {
   visibility: visible;
   pointer-events: visible;
 }
- .sub_menu-link {
-  color: var(--text-color);
+.sub_menu-link {
+  color: black;
 }
 .sub_menu-item {
   margin-top: 1rem;
@@ -222,7 +246,7 @@ body {
 }
 .main {
   position: relative;
-  background-image: url(../images/banner_bg_2.jpg);
+  background-image: var(--main-bg-img);
 }
 .banner__title {
   min-width: 35rem;
@@ -249,7 +273,7 @@ body {
 }
 /* Popular foods : */
 .Popularfoods {
-  background-color: #f4ecdf;
+  background-color: var(--pink-color);
   padding-top: 7rem;
 }
 .card-image {
@@ -282,6 +306,8 @@ body {
 .swiper-slide {
   background-color: var(--white-color);
   border-radius: 2rem;
+  border: 2px solid var(--text-color);
+  overflow: hidden;
 }
 .slide__link {
   background-color: var(--red-color);
@@ -319,7 +345,7 @@ body {
 }
 /* Delicious menu : */
 .delicious-menu {
-  background-color: #f4ecdf;
+  background-color: var(--pink-color);
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
@@ -355,7 +381,7 @@ body {
   width: 20%;
   /* background-color: transparent;
    */
-  background-color: #f4ecdf;
+  background-color: var(--pink-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,7 +432,7 @@ body {
 }
 /* app-download : */
 .app-download {
-  background-image: url(../images/download_bg_2.jpg);
+  background-image: var(--appdownload-pink);
   background-size: cover;
   padding: 7rem 19rem;
   background-repeat: no-repeat;
@@ -457,19 +483,19 @@ body {
   margin: 1rem 0;
 }
 .app-info__link2 {
-  background-color: var(--white-color);
+  background-color: white;
   padding: 0.9rem 2.2rem;
   position: relative;
   border-radius: 3rem;
   cursor: pointer;
   text-align: center;
-  color: var(--text-color);
+  color: black;
   display: inline-block;
   margin: 1rem 0;
 }
 /* special-discounts : */
 .special-discounts {
-  background-color: #f4ecdf;
+  background-color: var(--pink-color);
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
@@ -584,7 +610,7 @@ body {
 }
 /* Chefs : */
 .Chefs {
-  background-color: #ecd8b8;
+  background-color: var(--chefbg);
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
@@ -594,11 +620,16 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 38rem;
-  background-color: white;
   width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid var(--text-color);
+}
+.chef__name {
+  color: var(--text-color);
 }
 .chef__img {
-  background-color: #ecd8b8;
+  background-color: var(--pink-color);
   width: 100%;
 }
 .chef__img img {
@@ -615,12 +646,15 @@ body {
 }
 /* Readings ; */
 .Readings {
-  background-color: #f4ecdf;
+  background-color: var(--pink-color);
   padding-top: 7rem;
   padding-bottom: 18rem;
 }
 .blog {
   height: 48rem;
+  border: 2px solid var(--text-color);
+  border-radius: 2rem;
+  overflow: hidden;
 }
 .blog-img,
 .blog-title {
@@ -682,7 +716,8 @@ footer {
   padding: 0 4rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 2rem;
-  background-color: var(--white-color);
+  background: var(--contact-bg);
+  color: var(--text-color);
 }
 .contact-us__item {
   width: 33%;
@@ -696,7 +731,7 @@ footer {
   content: "";
   width: 0.1rem;
   height: 4rem;
-  background-color: var(--text-color);
+  background-color: black;
   left: 0px;
 }
 .contact-us__img {
@@ -723,7 +758,7 @@ footer {
   right: 0;
 }
 .footer-links-wrapper {
-  background-image: url(../images/footer_2_bg.jpg);
+  background-image: var(--footer-link-bg-pink);
   height: 50rem;
   position: absolute;
   width: 100%;
