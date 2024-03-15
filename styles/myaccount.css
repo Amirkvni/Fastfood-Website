@@ -1,13 +1,16 @@
 @import "../styles/grid.css";
 @import "../styles/fonts.css";
 .main {
-  background-image: url(../images/breadcrumb_bg.jpg);
+  background-image: var(--myaccount-bg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.navbar-brand {
+  background-color: transparent;
+}
 .personal-information__title {
+  color: black;
   font-size: 50px;
   font-weight: 500;
 }
@@ -17,8 +20,12 @@
   justify-content: center;
   align-items: center;
   width: 24%;
+  color: black;
   padding: 2rem;
   border-radius: 2rem;
+}
+.pages a {
+  color: black;
 }
 .personal-information {
   height: 35rem;
@@ -32,7 +39,7 @@
 }
 /* dates : */
 .dates {
-  background-color: white;
+  background-color: var(--white-color);
   padding: 12rem 0;
 }
 .right-data {
@@ -50,9 +57,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--pink-color);
+  background-color: var(--pink-color-myaccount-page);
   border-radius: 2.5rem;
   width: 100%;
+  color: black;
   height: 30rem;
 }
 .profile-wrapper {
@@ -64,12 +72,16 @@
   border-radius: 50%;
   width: 150px;
 }
+.profile-img {
+  height: 100%;
+}
 .profile-img img {
   width: 100%;
   height: 100%;
 }
 
 .profile-icon {
+  color: black;
   position: absolute;
   background-color: white;
   width: 40px;
@@ -115,11 +127,12 @@
 .order {
   width: 30%;
   border-radius: 1rem;
-  background-color: var(--pink-color);
+  background-color: var(--pink-color-myaccount-page);
   height: 22rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: black;
   align-items: center;
 }
 .order__count {
@@ -141,8 +154,9 @@
   font-size: 30px;
 }
 .profile-data {
+  color: black;
   margin-top: 3rem;
-  background-color: var(--pink-color);
+  background-color: var(--pink-color-myaccount-page);
   padding: 4rem 3rem;
   border-radius: 2rem;
 }

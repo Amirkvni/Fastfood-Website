@@ -7,11 +7,13 @@
   --white-color: #ffffff;
   --orange-color: #f2a22a;
   --pink-color: #f4ecdf;
+  --pink-color-myaccount-page: #f4ecdf;
   --main-bg-img: url(../images/banner_bg_2.jpg);
   --appdownload-pink: url(../images/download_bg_2.jpg);
   --footer-link-bg-pink: url(../images/footer_2.jpg);
   --chefbg: #ecd8b8;
   --contact-bg: var(--white-color);
+  --myaccount-bg: url(../images/breadcrumb_bg.jpg);
 }
 :root.dark-theme {
   --pink-color: black;
@@ -26,6 +28,8 @@
     rgb(64, 64, 64) 90.2%
   );
   --chefbg: black;
+  --myaccount-bg: url(../images/breadcrumb_bg-dark.png);
+  --pink-color-myaccount-page: #fff;
 }
 a {
   text-decoration: none;
