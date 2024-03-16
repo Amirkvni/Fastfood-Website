@@ -14,6 +14,7 @@
   --chefbg: #ecd8b8;
   --contact-bg: var(--white-color);
   --myaccount-bg: url(../images/breadcrumb_bg.jpg);
+  --border-none: none;
 }
 :root.dark-theme {
   --pink-color: black;
@@ -30,6 +31,7 @@
   --chefbg: black;
   --myaccount-bg: url(../images/breadcrumb_bg-dark.png);
   --pink-color-myaccount-page: #fff;
+  --border-none: 1px solid black;
 }
 a {
   text-decoration: none;

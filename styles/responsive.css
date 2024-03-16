@@ -179,6 +179,13 @@
   .pages {
     width: 58%;
   }
+  /* menu page : */
+  .display-none {
+    display: none;
+  }
+  .right-little__menu {
+    display: flex;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -259,6 +266,10 @@
   }
   .dates {
     padding: 7rem 0 16rem 0;
+  }
+  /* menu page : */
+  .menu-infos {
+    padding: 20rem 0;
   }
 }
 @media screen and (max-width: 576px) {
@@ -358,6 +369,11 @@
   .location-img {
     width: 83px;
     height: 83px;
+  }
+  /* menu page */
+  .menu-food {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 394px) {
