@@ -252,9 +252,9 @@
   width: 100%;
   height: 100%;
 }
-.address-info {
-  width: 2rem;
-}
 .address-location {
   text-align: end;
+}
+.edit-address i {
+  cursor: pointer;
 }
