@@ -646,9 +646,11 @@ body {
 .chef__img {
   background-color: var(--pink-color);
   width: 100%;
+  height: 100%;
 }
 .chef__img img {
   width: 100%;
+  height: 100%;
 }
 .chef__info {
   display: flex;
