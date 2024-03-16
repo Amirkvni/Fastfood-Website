@@ -368,12 +368,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-color);
 }
 .delicious-item--active {
   color: var(--red-color);
 }
 .items-foods {
   margin-top: 3rem;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.items-foods--active {
+  margin-top: 3rem;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
 }
 .item-food {
   background-color: transparent;

@@ -6,6 +6,7 @@ const navbar_collapse = document.querySelector(".navbar-collapse");
 const blogIcon = document.querySelector(".blog-icon");
 let sub_menu = document.querySelector(".sub_menu");
 let blog_nav__item = document.querySelector(".blog-nav__item");
+let delicious_items = document.querySelectorAll(".delicious-item");
 menu_link.addEventListener("click", function () {
   menu_list.classList.toggle("menu__list--show");
   if (menu_link_icon.classList.contains("fa-angle-down")) {
@@ -63,3 +64,29 @@ changeThemeBtn.addEventListener("click", function () {
     this.innerHTML = darkThemeIcon;
   }
 });
+//delisious :
+// - Custom Functions -
+function navigationTabsInit(
+  listItems,
+  listItemActiveClass,
+  contentItemShowClass
+) {
+  delicious_items.forEach((listItem) => {
+    listItem.addEventListener("click", function () {
+      removeActiveClass(listItemActiveClass);
+      removeActiveClass(contentItemShowClass);
+      this.classList.add(listItemActiveClass);
+      let contentId = this.getAttribute("data-content-id");
+      document.querySelector(contentId).classList.add(contentItemShowClass);
+    });
+  });
+}
+function removeActiveClass(className) {
+  document.querySelector(`.${className}`).classList.remove(className);
+}
+
+navigationTabsInit(
+  delicious_items,
+  "delicious-item--active",
+  "items-foods--active"
+);
