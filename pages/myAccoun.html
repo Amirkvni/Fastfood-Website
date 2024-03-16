@@ -141,9 +141,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-4">
-            <div class="right-data">
-              <div class="right-data__wrapper">
-                <div class="right-data__profile">
+            <div class="right-dashboard">
+              <div class="right-dashboard__wrapper">
+                <div class="right-dashboard__profile">
                   <div class="profile-wrapper">
                     <div class="profile-img">
                       <img
@@ -161,21 +161,21 @@
                   </div>
                 </div>
                 <div class="right-data__links">
-                  <a href="#" class="right-data__link right-data__link--active">
+                  <a href="#" class="right-data__link right-data__link--active" data-content-id="#personalInformation">
                     <span>
                       <i class="fa-regular fa-user"></i>
                       اطلاعات شخصی
                     </span>
                     <i class="fa-solid fa-caret-left"></i>
                   </a>
-                  <a href="#" class="right-data__link">
+                  <a href="#" class="right-data__link"data-content-id="#address">
                     <span>
                       <i class="fa-solid fa-address-card"></i>
                       نشانی
                     </span>
                     <i class="fa-solid fa-caret-left"></i>
                   </a>
-                  <a href="#" class="right-data__link">
+                  <a href="#" class="right-data__link" data-content-id="#order">
                     <span>
                       <i class="fa-solid fa-cart-shopping"></i>
                       سفارش
@@ -203,7 +203,7 @@
                     </span>
                     <i class="fa-solid fa-caret-left"></i>
                   </a>
-                  <a href="#" class="right-data__link">
+                  <a href="../index.html" class="right-data__link">
                     <span>
                       <i class="fa-solid fa-right-from-bracket"></i>
                       خروج
@@ -215,7 +215,8 @@
             </div>
           </div>
           <div class="col-12 col-lg-8">
-            <div>
+            <div class="left-dashboard left-dashboard--active" id="personalInformation">
+            <div class="left-dashboard__info">
               <span class="welcome-user">سلام امیرحسین کیوانی عزیز</span>
               <h2 class="userInfo">اطلاعات شخصی شما</h2>
             </div>
@@ -282,6 +283,63 @@
                 </ul>
               </div>
             </div>
+          </div>
+          <div class="left-dashboard" id="address">
+            <div class="left-dashboard__info">
+              
+              <h2 class="userInfo">آدرس های شما</h2>
+            </div>
+        <div class="addresses">
+          <div class="add-address">
+            <h3 class="add-address__title">آدرس ها</h3>
+            <a href="#" class="add-addres__link">              
+              <i class="fa-solid fa-location-dot"></i>
+              ثبت آدرس جدید
+            </a>
+          </div>
+          <div class="address-one">
+            <div class="address-info">
+              <span>خیابان فردوسی،فرعی۶،پلاک۱۲</span>
+              <span>اصفهان</span>
+              <span>amirhosein8292@gmail.com</span>
+              <span>09162035987</span>
+              <span>امیرحسین کیوانی</span>
+            </div>
+            <div class="address-location">
+              <div class="edit-address">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <div class="location-img">
+                <img src="../images/map-img.avif"class="location-image">
+              </div>
+            </div>
+          </div>
+          <div class="address-one">
+            <div class="address-info">
+              <span>خیابان فردوسی،فرعی۶،پلاک۱۲</span>
+              <span>اصفهان</span>
+              <span>amirhosein8292@gmail.com</span>
+              <span>09162035987</span>
+              <span>امیرحسین کیوانی</span>
+            </div>
+            <div class="address-location">
+              <div class="edit-address">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+              <div class="location-img">
+                <img src="../images/map-img.avif"class="location-image">
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="left-dashboard" id="order">
+            <div class="left-dashboard__info">
+              <span class="welcome-user">سلام امیرحسین کیوانی عزیز</span>
+              <h2 class="userInfo">سفارش های شما</h2>
+            </div>
+            <div><!----></div>
+          </div>
           </div>
         </div>
       </div>
